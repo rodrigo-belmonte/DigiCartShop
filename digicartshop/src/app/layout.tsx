@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/page";
-import { CartDrawer } from "./components/_ui/cartDrawer/page";
-import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
