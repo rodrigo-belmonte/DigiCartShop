@@ -68,16 +68,14 @@ export function ProductCardCart({
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-3">
           {_productCart.product.name}
         </h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400 mb-5">
-          {_productCart.product.detail}
-        </p>
-        <p className="font-normal text-gray-700 dark:text-gray-400">
+        <p className="font-normal  mb-5">{_productCart.product.detail}</p>
+        <p className="font-normal ">
           R$
           {Number.parseInt(_productCart.product.price)
             .toFixed(2)
             .replace(".", ",")}
         </p>
-        <div className="max-w-sm mx-auto w-20">
+        <div className="max-w-sm  w-20 my-10">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Quantidade
           </label>
@@ -92,9 +90,11 @@ export function ProductCardCart({
             required
           />
         </div>
-        <a className="cursor-pointer" onClick={handleDelete}>
-          Excluir
-        </a>
+        <div>
+          <a className="cursor-pointer text-blue-500 underline" onClick={handleDelete}>
+            Excluir
+          </a>
+        </div>
       </div>
     </div>
   );
