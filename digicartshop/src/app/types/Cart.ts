@@ -1,4 +1,4 @@
 type Cart  ={
-    products: Product[];
+    products: ProductCart[];
     total: number;
 }
