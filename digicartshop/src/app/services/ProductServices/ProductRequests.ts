@@ -27,7 +27,7 @@ export async function GetProducts(): Promise<Product[]> {
 }
   
 
-export async function GetProductById(id: string): Promise<Product> {
+export async function GetProductById(id: string | string[] | undefined | null): Promise<Product> {
     let responseGetProductById: Product = {
         name: "",
         detail: "",
