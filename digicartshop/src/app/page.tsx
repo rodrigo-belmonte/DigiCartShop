@@ -39,7 +39,10 @@ export default function Home() {
             {productList
               .filter((product) => product.hero == undefined)
               .map((product) => (
-                <ProductCard key={product.id} _product={product} />
+                <ProductCard
+                  key={product.id}
+                  _product={product}
+                />
               ))}
           </div>
         </div>
@@ -70,6 +73,7 @@ export default function Home() {
           <span className="sr-only">Loading...</span>
         </div>
       )}
+      
     </div>
   );
 }
