@@ -2,7 +2,7 @@
 
 Após o clone, realize a instalação das dependencias usando **yarn** na linha de comando no diretório do projeto;
 
-Após, em um terminal separado, execute o json server para a leitura e disponibilidade dos dados do json com o comando:
+Após, em um terminal separado, no diretório do projeto onde se encontra o arquivo db.json, execute o json server para a leitura e disponibilidade dos dados do json com o comando:
 
 **json-server --watch db.json --port 3004 
 (verifique se a porta 3004 está disponível, caso não altere para a porta que desejar)**
